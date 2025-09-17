@@ -9,5 +9,5 @@ let removeWhitespace = lineWithWhitespace.trim();
 let backDoorLetter = removeWhitespace[removeWhitespace.length - 1];
 
 let backDoorWord = "Horse";
-let backDoorPassword = backDoorWord+ ", please";
+let backDoorPassword = backDoorWord + ", please";
 console.log(frontDoorLetter);
