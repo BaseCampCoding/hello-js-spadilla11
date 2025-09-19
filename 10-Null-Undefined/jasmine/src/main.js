@@ -1,5 +1,3 @@
-const { version } = require("react");
-
 //Task 1: Create a New Visitor
 let visitorName = "Dani";
 let visitorAge = "20";
@@ -13,7 +11,7 @@ const visitor = {
 
 //Task 2: Revoke the Ticket
 visitor.ticketId = null;
-console.log(visitor)
+// console.log(visitor)
 
 //Task 3: Determine the Ticket Status
 const tickets = {
@@ -23,19 +21,19 @@ const tickets = {
     1117: null
 };
 
-let ticketIdToCheck = 1114
+let ticketIdToCheck = 1114;
 let ticketStatusResult;
 
 if (!(ticketIdToCheck in tickets)) {
     ticketStatusResult = "Ticket Status: unknown ticket id"
 }
 else if (tickets[ticketIdToCheck] === null) {
-    ticketStatusResult = "Ticket Status: not sold"
+    ticketStatusResult = "Ticket Status: not sold";
 }
 else {
-   ticketStatusResult = `Ticket Status: sold to ${tickets[ticketIdToCheck]}`
+   ticketStatusResult = `Ticket Status: sold to ${tickets[ticketIdToCheck]}`;
 }
-console.log(ticketStatusResult)
+// console.log(ticketStatusResult)
 
 //Task 4: Improve the Ticket Status Response
 let simpleTicketStatusResult;
@@ -46,19 +44,21 @@ else {
     simpleTicketStatusResult = "invalid ticket !!!"
 }
 
-console.log(simpleTicketStatusResult)
+// console.log(simpleTicketStatusResult)
 
-//Task 5: Determine the Version of Terms and Conditions
+// Task 5: Determine the Version of Terms and Conditions
 const visitorWithGtc = {
     gtc:{
         version: 1.0
-    }
+    }                                                                       
 }
 
 let gtcVersion;
-if (gtc in visitorWithGtc){
-    gtcVersion = gtc
+if (visitorWithGtc.gtc && visitorWithGtc.gtc.version){
+    gtcVersion = visitorWithGtc.gtc.version;
 } 
 else {
-    gtcVersion = null
+    gtcVersion = null;
 }
+
+console.log(gtcVersion)
