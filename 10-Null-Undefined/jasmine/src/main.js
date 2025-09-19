@@ -1,3 +1,5 @@
+const { version } = require("react");
+
 //Task 1: Create a New Visitor
 let visitorName = "Dani";
 let visitorAge = "20";
@@ -48,7 +50,15 @@ console.log(simpleTicketStatusResult)
 
 //Task 5: Determine the Version of Terms and Conditions
 const visitorWithGtc = {
-    
+    gtc:{
+        version: 1.0
+    }
 }
 
-let 
+let gtcVersion;
+if (gtc in visitorWithGtc){
+    gtcVersion = gtc
+} 
+else {
+    gtcVersion = null
+}
