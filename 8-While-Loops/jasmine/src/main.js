@@ -11,13 +11,13 @@ else if (juiceName === "Tropical Island"){
 else if (juiceName === "All or Nothing"){
     timeToMixJuiceResult = 5;}
 else {timeToMixJuiceResult = 2.5;}
-
+                                                                                                                            
 //Task 2: Replenish the Lime Wedge Supply
 let wedgesNeeded = 100;
 let limes = ["small", "large", "medium", "large", "small"];
 let wedgesCut = 0;
-let limesCut
-let i = 0
+let limesCut = 0;
+let i = 0;
 
 while (wedgesCut < wedgesNeeded && i < limes.length ) {
     
@@ -33,7 +33,7 @@ while (wedgesCut < wedgesNeeded && i < limes.length ) {
     limesCut++;
     i++
 }
-// console.log(wedgesCut)
+
 
 // Task 3: Finish Up the Shift
 let timeLeft = 5
@@ -48,7 +48,7 @@ for (let i = 0; i < orders.length; i++){
     if (juice === "Pure Strawberry Joy" ) {
         timeToMixJuiceResult = 0.5;}
 
-    else if (juice === "Energizer" || juiceName === "Green Garden") {
+    else if (juice === "Energizer" || juice === "Green Garden") {
         timeToMixJuiceResult = 1.5;}
 
     else if (juice === "Tropical Island"){
@@ -63,7 +63,9 @@ for (let i = 0; i < orders.length; i++){
 }
 
 while (totalTime < timeLeft && index < orderTrack) {
-    
+    let remainingOrders = []
 }
+
+
 
  
